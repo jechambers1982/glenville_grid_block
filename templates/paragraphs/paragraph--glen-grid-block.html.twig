@@ -1,0 +1,22 @@
+{# templates/paragraph--glen-grid-block.html.twig #}
+{% set cols = paragraph.field_columns.value|default(3) %}
+{% set lg_map = {2: 'col-lg-6', 3: 'col-lg-4', 4: 'col-lg-3'} %}
+{% set lg_class = lg_map[cols]|default('col-lg-4') %}
+
+<section class="glenville-grid-block">
+	<div class="container">
+		<div class="row title_row" data-aos="fade-up">
+			<h2 class="section-title">{{content.field_title.0}}</h2>
+		</div>
+		<div class="row">
+			{% for key, item in content.field_grid_block_items %}
+				{# Only render numeric children; skip the '#...' meta keys. #}
+				{% if key matches '/^\\d+$/' %}
+					<div class="col-12 col-md-6 {{ lg_class }}" data-aos="fade-up">
+						{{ item }}  {# this renders the child paragraph (the card) inside the col #}
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
