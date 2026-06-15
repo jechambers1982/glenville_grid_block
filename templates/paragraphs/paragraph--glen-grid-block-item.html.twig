@@ -1,0 +1,17 @@
+{# templates/paragraph--glen-grid-block-item.html.twig #}
+{% set li = paragraph.field_link.0 %}
+{% set url_obj = li.getUrl() %}
+{% set href = url_obj.toString() %}
+{% set text = li.title ?: href %} {# fallback if no link text #}
+
+<article class="grid-block-item h-100">
+	<div class="grid-block-item__inner d-flex flex-column">
+		<h3 class="grid-block-item__title"><a href="{{ href }}">{{content.field_title.0}}</a></h3>
+		<div class="grid-block-item__text">{{ content.field_text }}</div>
+		<div class="btn_row">
+			<a class="btn white-btn" href="{{ href }}">{{ text }}
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+</article>
