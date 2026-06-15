@@ -1,0 +1,9 @@
+name: Glenville Grid Block
+type: module
+description: 'Adds a No Image Grid Block'
+core_version_requirement: ^11
+package: Glenville
+dependencies:
+  - drupal:paragraphs
+  - drupal:text
+  - drupal:link
