@@ -1,0 +1,23 @@
+uuid: b38fe09d-a7f2-421f-b01c-bea606dc74f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - glenville_grid_block
+id: paragraph.field_columns
+field_name: field_columns
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

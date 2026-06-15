@@ -1,0 +1,23 @@
+uuid: 5719f5ea-46c6-4a53-a489-1b3077ee9878
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+  enforced:
+    module:
+      - glenville_grid_block
+id: paragraph.field_grid_block_items
+field_name: field_grid_block_items
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

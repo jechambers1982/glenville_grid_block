@@ -1,0 +1,29 @@
+uuid: 70346813-1b67-4c9d-b1f1-8b39207a60a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.glen_grid_block_item
+  module:
+    - text
+  enforced:
+    module:
+      - glenville_grid_block
+id: paragraph.glen_grid_block_item.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: glen_grid_block_item
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

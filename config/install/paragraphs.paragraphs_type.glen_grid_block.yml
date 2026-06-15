@@ -1,0 +1,18 @@
+uuid: c59da72f-9f0f-48b9-94c5-cc71056a6bdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+  enforced:
+    module:
+      - glenville_grid_block
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories: {  }
+id: glen_grid_block
+label: 'Glenville Grid Block'
+icon_uuid: null
+icon_default: null
+description: 'Parent Item for individual grid blocks.'
+behavior_plugins: {  }

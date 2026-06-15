@@ -1,0 +1,34 @@
+uuid: 3824046a-a1ab-40cc-b816-d812820ac737
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_columns
+    - paragraphs.paragraphs_type.glen_grid_block
+  module:
+    - unique_field_ajax
+  enforced:
+    module:
+      - glenville_grid_block
+third_party_settings:
+  unique_field_ajax:
+    message: "Field '%label' <strong>must</strong> be unique.\r\nThe value '%value' can also be found on %link."
+    message_warning: "Field '%label' <em>should</em> be unique.\r\nThe value '%value' can also be found on %link."
+id: paragraph.glen_grid_block.field_columns
+field_name: field_columns
+entity_type: paragraph
+bundle: glen_grid_block
+label: Columns
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 2
+  max: 4
+  prefix: ''
+  suffix: ''
+field_type: integer

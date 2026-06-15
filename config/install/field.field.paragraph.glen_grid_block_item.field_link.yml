@@ -1,0 +1,31 @@
+uuid: a2540efb-d176-4e85-aedf-9833cd769b75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.glen_grid_block_item
+  module:
+    - link
+    - unique_field_ajax
+  enforced:
+    module:
+      - glenville_grid_block
+third_party_settings:
+  unique_field_ajax:
+    message: "Field '%label' <strong>must</strong> be unique.\r\nThe value '%value' can also be found on %link."
+    message_warning: "Field '%label' <em>should</em> be unique.\r\nThe value '%value' can also be found on %link."
+id: paragraph.glen_grid_block_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: glen_grid_block_item
+label: 'Read More Link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link
