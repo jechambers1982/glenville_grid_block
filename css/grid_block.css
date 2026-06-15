@@ -1,0 +1,89 @@
+section.glenville-grid-block {
+	padding: 32px 0 96px;
+}
+
+section.glenville-grid-block div.row
+{
+	margin: 0;
+}
+
+section.glenville-grid-block .title_row {
+	padding-bottom: 0;
+}
+
+section.glenville-grid-block h2.section-title {
+	margin: 0 0 20px;
+}
+
+section.glenville-grid-block div.row > [class*="col-"]  {
+	padding-left: 0.5px;
+	padding-right: 0.5px;
+	margin-bottom: 1px;
+}
+
+section.glenville-grid-block div.grid-block-item__inner {
+	background: #003da5;
+	color: #fff;
+	min-height: 200px; /* visually balances the square feel */
+	padding: 36px; /* roomy interior like screenshot */
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+section.glenville-grid-block h3.grid-block-item__title {
+	margin: 0 0 14px;
+	line-height: 1.2;
+	font-weight: 800;
+}
+
+section.glenville-grid-block h3.grid-block-item__title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section.glenville-grid-block h3.grid-block-item__title a:hover,
+section.glenville-grid-block h3.grid-block-item__title a:focus {
+	color: #29b6ff;
+	text-decoration: none;
+}
+
+section.glenville-grid-block div.grid-block-item__text {
+	margin: 0 0 22px;
+	color: #fff;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+section.glenville-grid-block div.grid-block-item__text p
+{
+	font-weight: 600;
+	line-height: 1.45;
+}
+
+section.glenville-grid-block div.btn_row {
+	margin-top: auto;
+}
+
+section.glenville-grid-block .btn.white-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 12px 20px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	color: #fff;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 999px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+section.glenville-grid-block btn.white-btn i {
+	font-size: 16px;
+	line-height: 1;
+}
